@@ -21,13 +21,13 @@
 - [ ] [React](https://reactjs.org/)
 - Node.js
 
-The MEVN stack
+#### The MEVN stack
 - MongoDB
 - Express.js
 - [ ] [Vue.js](https://vuejs.org/)
 - Node.js
 
-The LAMP stack
+#### The LAMP stack
 - [ ] [Linux](https://www.linux.org/)
 - [ ] [Apache](https://httpd.apache.org/)
 - [ ] [MySQL](https://www.mysql.com/)
@@ -36,18 +36,18 @@ The LAMP stack
 - [ ] [Perl](https://www.perl.org/)
 - [ ] [Python](https://www.python.org/)
 
-The Serverless Stack
+#### The Serverless Stack
 - [ ] [AWS](https://aws.amazon.com/)
 - [ ] [Google Cloud](https://cloud.google.com//)
 
-Ruby on Rails
+#### Ruby on Rails
 - [ ] [Ruby](https://www.ruby-lang.org/en/)
 - [ ] [Ruby on Rails](https://rubyonrails.org/)
 
-Multi-platform
+#### Multi-platform
 - [ ] [Flutter](https://flutter.dev/)
 - [ ] [Unity](https://unity.com/)
 
-Native
+#### Native
 - [ ] [Xcode](https://developer.apple.com/xcode/)
 - [ ] [Android Studio](https://developer.android.com/studio)
