@@ -9,13 +9,13 @@
 
 ## Learned stacks
 
-The MEAN stack
+###### The MEAN stack
 - [ ] [MongoDB](https://www.mongodb.com/)
 - [ ] [Express.js](https://expressjs.com/)
 - [ ] [AngularJS](https://angularjs.org/)
 - [ ] [Node.js](https://nodejs.org/en/)
 
-The MERN stack
+###### The MERN stack
 - MongoDB
 - Express.js
 - [ ] [React](https://reactjs.org/)
