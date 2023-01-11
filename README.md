@@ -30,8 +30,8 @@
 #### The LAMP stack
 - [ ] [Linux](https://www.linux.org/)
 - [ ] [Apache](https://httpd.apache.org/)
-- [ ] [MySQL](https://www.mysql.com/)
-- [ ] [PHP](https://www.php.net/)
+- [X] [MySQL](https://www.mysql.com/)
+- [X] [PHP](https://www.php.net/)
 
 - [ ] [Perl](https://www.perl.org/)
 - [ ] [Python](https://www.python.org/)
@@ -46,8 +46,8 @@
 
 #### Multi-platform
 - [ ] [Flutter](https://flutter.dev/)
-- [ ] [Unity](https://unity.com/)
+- [X] [Unity](https://unity.com/)
 
 #### Native
-- [ ] [Xcode](https://developer.apple.com/xcode/)
-- [ ] [Android Studio](https://developer.android.com/studio)
+- [X] [Xcode](https://developer.apple.com/xcode/)
+- [X] [Android Studio](https://developer.android.com/studio)
