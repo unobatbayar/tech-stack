@@ -3,7 +3,7 @@
 
   <strong>Learning new tools and technologies</strong>
   
-  [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
+  Recommend me anything [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 </div>
 
 
