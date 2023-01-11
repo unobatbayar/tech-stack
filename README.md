@@ -2,7 +2,7 @@
   <h1><code>tech-stack</code></h1>
 
   <strong>Technology stacks for Software Development </strong>
-  <small> Feel free to fork and customise for your own progress 👍 </small>
+  <p> Feel free to fork and customise for your own progress 👍 </p>
   
   [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 </div>
