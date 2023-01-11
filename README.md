@@ -2,7 +2,7 @@
   <h1><code>tech-stack</code></h1>
 
   <strong>Technology stacks for Software Development </strong>
-  <p> Feel free to fork and customise for your own progress 👍 </p>
+  <p> Feel free to fork and customise for your own progress 👍</p>
   
   [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 </div>
@@ -49,6 +49,6 @@
 - [ ] [Flutter](https://flutter.dev/)
 - [X] [Unity](https://unity.com/)
 
-#### Native
+#### Mobile
 - [X] [Xcode](https://developer.apple.com/xcode/)
 - [X] [Android Studio](https://developer.android.com/studio)
