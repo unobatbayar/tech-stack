@@ -1,12 +1,10 @@
 ﻿<div align="center">
   <h1><code>tech-stack</code></h1>
 
-  <strong>Technology stacks for Software Development </strong>
+  <strong>Learning new technology stacks for Software Development</strong>
   
   [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 </div>
-
-- Feel free to fork and customise for your own tracking.
 
 ## Learned stacks
 
