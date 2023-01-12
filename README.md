@@ -32,9 +32,8 @@
 - [X] [Linux](https://www.linux.org/)
 - [X] [Apache](https://httpd.apache.org/)
 - [X] [MySQL](https://www.mysql.com/)
-- [X] [PHP](https://www.php.net/)
--
-- [ ] [Perl](https://www.perl.org/)
+- [X] [PHP](https://www.php.net/) [ ] [Perl](https://www.perl.org/)
+- 
 - [ ] [Python](https://www.python.org/)
 
 #### The Serverless Stack
