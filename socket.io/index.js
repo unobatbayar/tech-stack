@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/chat', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+  });
+
 io.on('connection', (socket) => {
     io.emit('chat message', "user has connected!");
     socket.on('disconnect', () => {
