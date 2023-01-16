@@ -34,6 +34,7 @@
 
 - [ ] [Perl](https://www.perl.org/)
 - [ ] [Python](https://www.python.org/)
+  - [Tutorial](https://www.w3schools.com/python/)
 
 #### The Serverless Stack
 - [ ] [AWS](https://aws.amazon.com/)
@@ -49,6 +50,7 @@
 
 #### Mobile Development
 - [X] [Xcode](https://developer.apple.com/xcode/)
+  - [Apple Developer](https://developer.apple.com/)
 - [X] [Android Studio](https://developer.android.com/studio)
 
 #### API
@@ -58,5 +60,6 @@
 #### Realtime
 - [ ] [Firebase](https://firebase.google.com/products/realtime-database)
 - [ ] [Socket.IO](https://socket.io/)
+  - [WebSockets in 100 seconds](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
   - [Emit cheatsheet](https://socket.io/docs/v4/emit-cheatsheet)
 - [ ] [WebRTC](https://webrtc.org/)
