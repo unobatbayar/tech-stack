@@ -15,8 +15,8 @@
 - [ ] [Node.js](https://nodejs.org/en/)
 
 #### The MERN stack
-- MongoDB
-- Express.js
+MongoDB
+Express.js
 - [ ] [React](https://reactjs.org/)
 - Node.js
 
