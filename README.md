@@ -53,6 +53,7 @@
 - [Xcode](https://developer.apple.com/xcode/)
   - [Apple Developer](https://developer.apple.com/)
 - [Android Studio](https://developer.android.com/studio)
+  - [Kotlin](https://developer.android.com/kotlin/first)
 
 #### API
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
