@@ -34,7 +34,6 @@
 
 - [Perl](https://www.perl.org/)
 - [Python](https://www.python.org/)
-  - [Tutorial](https://www.w3schools.com/python/)
 
 #### The Serverless Stack
 - [AWS](https://aws.amazon.com/)
@@ -51,9 +50,7 @@
 
 #### Mobile Development
 - [Xcode](https://developer.apple.com/xcode/)
-  - [Apple Developer](https://developer.apple.com/)
 - [Android Studio](https://developer.android.com/studio)
-  - [Kotlin](https://developer.android.com/kotlin/first)
 
 #### API
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
