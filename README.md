@@ -34,7 +34,7 @@
 
 - [ ] [Perl](https://www.perl.org/)
 - [ ] [Python](https://www.python.org/)
-  - [w3schools](https://www.w3schools.com/python/)
+  - [Tutorial](https://www.w3schools.com/python/)
 
 #### The Serverless Stack
 - [ ] [AWS](https://aws.amazon.com/)
