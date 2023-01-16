@@ -38,6 +38,7 @@
 
 #### The Serverless Stack
 - [ ] [AWS](https://aws.amazon.com/)
+  - [Getting Started / Tutorials](https://aws.amazon.com/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.content-latest-publish-date&getting-started-all.sort-order=desc&awsf.getting-started-category=*all&awsf.getting-started-level=*all&awsf.getting-started-content-type=*all)
 - [ ] [Google Cloud](https://cloud.google.com//)
 
 #### Ruby on Rails
