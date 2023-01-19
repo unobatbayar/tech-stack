@@ -10,7 +10,7 @@
 
 #### The MEAN stack
 - [MongoDB](https://www.mongodb.com/)
-<img alt="What is MongoDB" src="https://webimages.mongodb.com/_com_assets/cms/1-lwnlfl1ryn.png?auto=format%2Ccompress&ch=DPR&w=441" width="60%" height="60%">
+<img alt="What is MongoDB" src="https://webimages.mongodb.com/_com_assets/cms/1-lwnlfl1ryn.png?auto=format%2Ccompress&ch=DPR&w=441" width="20%" height="20%">
 
 - [Express.js](https://expressjs.com/)
 - [AngularJS](https://angularjs.org/)
