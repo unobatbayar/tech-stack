@@ -9,7 +9,7 @@
 ## Learned
 
 #### The MEAN stack
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200601200043/mean-stack-flow.png" width="50%" height="50%">
+<img src="[https://media.geeksforgeeks.org/wp-content/uploads/20200601200043/mean-stack-flow.png](https://media.geeksforgeeks.org/wp-content/uploads/20200601200046/mean-stack-tech.png)" width="50%" height="50%">
 
 - [MongoDB](https://www.mongodb.com/)
 - [Express.js](https://expressjs.com/)
