@@ -9,26 +9,28 @@
 ## Learned
 
 #### The MEAN stack
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200601200043/mean-stack-flow.png" width="35%" height="35%">
 - [MongoDB](https://www.mongodb.com/)
-<img alt="What is MongoDB" src="https://webimages.mongodb.com/_com_assets/cms/1-lwnlfl1ryn.png?auto=format%2Ccompress&ch=DPR&w=441" width="35%" height="35%">
-
 - [Express.js](https://expressjs.com/)
 - [AngularJS](https://angularjs.org/)
 - [Node.js](https://nodejs.org/en/)
 
 #### The MERN stack
+<img src="https://www.bocasay.com/wp-content/uploads/2020/03/MERN-stack-1.png" width="35%" height="35%">
 - MongoDB
 - Express.js
 - [React](https://reactjs.org/)
 - Node.js
 
 #### The MEVN stack
+<img src="https://vteams.com/wp-content/uploads/2020/11/mevn-stack-frameworks-1-1024x275.png" width="35%" height="35%">
 - MongoDB
 - Express.js
 - [Vue.js](https://vuejs.org/)
 - Node.js
 
 #### The LAMP stack
+<img src="https://res.cloudinary.com/lwgatsby/f_auto,c_scale,w_343/www/uploads/2018/02/kb-lamp-stack-1.jpg" width="35%" height="35%">
 - [Linux](https://www.linux.org/)
 - [Apache](https://httpd.apache.org/)
 - [MySQL](https://www.mysql.com/)
@@ -38,6 +40,7 @@
 - [Python](https://www.python.org/)
 
 #### The Serverless Stack
+<img src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2020/07/31/laravelLampStackI1.png" width="35%" height="35%">
 - [AWS](https://aws.amazon.com/)
   - [Getting started / Tutorials](https://aws.amazon.com/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.content-latest-publish-date&getting-started-all.sort-order=desc&awsf.getting-started-category=*all&awsf.getting-started-level=*all&awsf.getting-started-content-type=*all)
 - [Google Cloud](https://cloud.google.com//)
@@ -46,9 +49,11 @@
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Ruby on Rails](https://rubyonrails.org/)
 
-#### Multi-platform
-- [Flutter](https://flutter.dev/)
+#### Cross-platform
 - [Unity](https://unity.com/)
+- [Flutter](https://flutter.dev/)
+- [React Native](https://reactnative.dev/)
+- [Xamarin](https://dotnet.microsoft.com/en-us/apps/xamarin)
 
 #### Mobile Development
 - [Xcode](https://developer.apple.com/xcode/)
