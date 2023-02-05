@@ -6,8 +6,6 @@
   [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 </div>
 
-## Learned
-
 #### The MEAN stack
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200601200046/mean-stack-tech.png" width="50%" height="50%">
 
