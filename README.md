@@ -39,13 +39,13 @@
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Ruby on Rails](https://rubyonrails.org/)
 
-#### Cross-platform
+#### Cross-platform Mobile
 - [Unity](https://unity.com/)
 - [Flutter](https://flutter.dev/)
 - [React Native](https://reactnative.dev/)
 - [Xamarin](https://dotnet.microsoft.com/en-us/apps/xamarin)
 
-#### Mobile Development
+#### Native Mobile
 - [Xcode](https://developer.apple.com/xcode/)
 - [Android Studio](https://developer.android.com/studio)
 
@@ -63,3 +63,6 @@
 #### Audio / Plug-in
 - [JUCE](https://juce.com/)
 - [C++](https://cplusplus.com/)
+
+#### Spatial
+- Coming soon
