@@ -27,9 +27,8 @@
 - [Apache](https://httpd.apache.org/)
 - [MySQL](https://www.mysql.com/)
 - [PHP](https://www.php.net/) 
-
-- [Perl](https://www.perl.org/)
-- [Python](https://www.python.org/)
+  - [Perl](https://www.perl.org/)
+  - [Python](https://www.python.org/)
 
 #### The Serverless Stack
 - [AWS](https://aws.amazon.com/)
