@@ -61,7 +61,7 @@
 - [Agora.io](https://www.agora.io/)
 
 #### Audio / Plug-in
-- [JUCE](https://juce.com/)
+- [JUCE Framework](https://juce.com/)
 - [C++](https://cplusplus.com/)
 
 #### Spatial
