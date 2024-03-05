@@ -1,9 +1,7 @@
 ﻿<div align="center">
   <h1><code>tech-stack</code></h1>
 
-  <strong>Exploring new technology stacks for development</strong>
-  
-  [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
+  <strong>Exploring new technology stacks for development</strong>  
 </div>
 
 #### The MEAN stack
@@ -13,16 +11,16 @@
 - [Node.js](https://nodejs.org/en/)
 
 #### The MERN stack
-- MongoDB
-- Express.js
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
 - [React](https://reactjs.org/)
-- Node.js
+- [Node.js](https://nodejs.org/en/)
 
 #### The MEVN stack
-- MongoDB
-- Express.js
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
 - [Vue.js](https://vuejs.org/)
-- Node.js
+- [Node.js](https://nodejs.org/en/)
 
 #### The LAMP stack
 - [Linux](https://www.linux.org/)
