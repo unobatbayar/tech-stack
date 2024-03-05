@@ -1,7 +1,7 @@
 ﻿<div align="center">
   <h1><code>tech-stack</code></h1>
 
-  <strong>Exploring technology stacks for development</strong>  
+  <strong>Exploring technology stacks for various software developments</strong>  
 </div>
 
 #### The MEAN stack
@@ -58,4 +58,8 @@
 - [Socket.IO](https://socket.io/)
   - [Emit cheatsheet](https://socket.io/docs/v4/emit-cheatsheet)
 - [WebRTC](https://webrtc.org/)
-- [Agora.io](https://www.agora.io/) 
+- [Agora.io](https://www.agora.io/)
+
+#### Audio / Plug-in
+- [JUCE](https://juce.com/)
+- [C++](https://cplusplus.com/)
