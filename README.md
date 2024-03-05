@@ -1,7 +1,7 @@
 ﻿<div align="center">
   <h1><code>tech-stack</code></h1>
 
-  <strong>Exploring new technology stacks for development</strong>  
+  <strong>Exploring technology stacks for development</strong>  
 </div>
 
 #### The MEAN stack
