@@ -10,7 +10,7 @@
 - [AngularJS](https://angularjs.org/)
 - [Node.js](https://nodejs.org/en/)
 
-#### The MERN stack
+#### The [MERN](https://www.mongodb.com/mern-stack) stack
 - [MongoDB](https://www.mongodb.com/)
 - [Express.js](https://expressjs.com/)
 - [React](https://reactjs.org/)
