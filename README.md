@@ -50,6 +50,7 @@
 - [Android Studio](https://developer.android.com/studio)
 
 #### API
+- [Node.js](https://nodejs.org/en/)
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 - [Spring](https://spring.io/guides/tutorials/rest/)
 
@@ -66,3 +67,6 @@
 
 #### Spatial
 - Coming soon
+
+##### Trends
+- [Year in Review 2023](https://radar.cloudflare.com/year-in-review/2023)
