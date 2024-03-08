@@ -30,7 +30,7 @@
   - [Perl](https://www.perl.org/)
   - [Python](https://www.python.org/)
 
-#### Serverless 
+#### ❎ Serverless 
 - [AWS](https://aws.amazon.com/)
   - [Getting started / Tutorials](https://aws.amazon.com/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.content-latest-publish-date&getting-started-all.sort-order=desc&awsf.getting-started-category=*all&awsf.getting-started-level=*all&awsf.getting-started-content-type=*all)
 - [Google Cloud](https://cloud.google.com//)
@@ -39,17 +39,17 @@
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Ruby on Rails](https://rubyonrails.org/)
 
-#### Cross-platform Mobile
+#### 📲 Cross-platform Mobile
 - [Unity](https://unity.com/)
 - [Flutter](https://flutter.dev/)
 - [React Native](https://reactnative.dev/)
 - [Xamarin](https://dotnet.microsoft.com/en-us/apps/xamarin)
 
-#### Native Mobile
+#### 📱 Native Mobile
 - [Xcode](https://developer.apple.com/xcode/)
 - [Android Studio](https://developer.android.com/studio)
 
-#### API
+#### 🌐 API
 - [Node.js](https://nodejs.org/en/)
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 - [Spring](https://spring.io/guides/tutorials/rest/)
@@ -65,7 +65,7 @@
 - [JUCE Framework](https://juce.com/)
 - [C++](https://cplusplus.com/)
 
-#### AR/VR
+#### 👓 AR/VR
 - [Spatial Computing (SwiftUI / RealityKit)](https://developer.apple.com/wwdc23/topics/spatial-computing/)
 - [Unity](https://learn.unity.com/course/create-with-vr)
 
