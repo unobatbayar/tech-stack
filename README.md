@@ -1,7 +1,7 @@
 ﻿<div align="center">
   <h1><code>tech-stack</code></h1>
 
-  <strong>Exploring technology stacks for various software developments</strong>  
+  <strong>Exploring technology stacks for future software projects</strong>  
 </div>
 
 #### 🔴 The MEAN stack
@@ -9,6 +9,7 @@
 - [Express.js](https://expressjs.com/)
 - [AngularJS](https://angularjs.org/)
 - [Node.js](https://nodejs.org/en/)
+  - [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4)
 
 #### 🟡 The [MERN](https://www.mongodb.com/mern-stack) stack
 - [MongoDB](https://www.mongodb.com/)
