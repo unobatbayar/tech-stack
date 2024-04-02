@@ -69,11 +69,3 @@
 #### 👓 AR/VR
 - [Spatial Computing (SwiftUI / RealityKit)](https://developer.apple.com/wwdc23/topics/spatial-computing/)
 - [Unity](https://learn.unity.com/course/create-with-vr)
-
-##### 📈 Trends
-- [Year in Review 2023](https://radar.cloudflare.com/year-in-review/2023)
-
----
-
-> [!NOTE]  
-> Please feel free to contribute and expand or edit the list.
