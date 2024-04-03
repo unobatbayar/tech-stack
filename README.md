@@ -74,67 +74,67 @@ This repository contains a curated list of technology stacks suitable for differ
 
 ### Full-Stack Web Application
 
-**Frontend**: React.js
-**Backend**: Node.js (Express.js)
-**Database**: MongoDB
-**Deployment**: Docker, AWS/GCP/Azure
+- **Frontend**: React.js
+- **Backend**: Node.js (Express.js)
+- **Database**: MongoDB
+- **Deployment**: Docker, AWS/GCP/Azure
 
 ### Content Management System (CMS)
 
-**Frontend**: React.js
-**Backend**: WordPress
-**Database**: MySQL
-**Deployment**: Shared hosting, AWS/GCP/Azure with Elastic Beanstalk
+- **Frontend**: React.js
+- **Backend**: WordPress
+- **Database**: MySQL
+- **Deployment**: Shared hosting, AWS/GCP/Azure with Elastic Beanstalk
 
 ### E-commerce Platform
 
-**Frontend**: Vue.js
-**Backend**: Django
-**Database**: PostgreSQL
-**Deployment**: Kubernetes, AWS/GCP/Azure
+- **Frontend**: Vue.js
+- **Backend**: Django
+- **Database**: PostgreSQL
+- **Deployment**: Kubernetes, AWS/GCP/Azure
 
 ## Mobile App Development
 
 ### iOS App
 
 **Framework**: Swift
-**UI**: SwiftUI
-**Backend Integration**: Firebase
-**Database**: Firestore
-**Deployment**: App Store Connect
+- **UI**: SwiftUI
+- **Backend Integration**: Firebase
+- **Database**: Firestore
+- **Deployment**: App Store Connect
 
 ### Android App
 
-**Framework**: Kotlin
-**UI**: Jetpack Compose
-**Backend Integration**: Firebase
-**Database**: Firestore
-**Deployment**: Google Play Console
+- **Framework**: Kotlin
+- **UI**: Jetpack Compose
+- **Backend Integration**: Firebase
+- **Database**: Firestore
+- **Deployment**: Google Play Console
 
 ### Cross-Platform Mobile App
 
-**Framework**: React Native
-**Backend Integration**: GraphQL
-**Database**: SQLite
-**Deployment**: App Store Connect, Google Play Console
+- **Framework**: React Native
+- **Backend Integration**: GraphQL
+- **Database**: SQLite
+- **Deployment**: App Store Connect, Google Play Console
 
 ## Enterprise Software
 
 ### Enterprise Resource Planning (ERP) System
 
-**Frontend**: Angular
-**Backend**: Java (Spring Boot)
-**Database**: Oracle
-**Deployment**: Docker Swarm, Kubernetes
+- **Frontend**: Angular
+- **Backend**: Java (Spring Boot)
+- **Database**: Oracle
+- **Deployment**: Docker Swarm, Kubernetes
 
 ### Customer Relationship Management (CRM) System
 
-**Frontend**: Ember.js
-**Backend**: Ruby on Rails
-**Database**: PostgreSQL
-**Deployment**: Heroku, AWS/GCP/Azure
+- **Frontend**: Ember.js
+- **Backend**: Ruby on Rails
+- **Database**: PostgreSQL
+- **Deployment**: Heroku, AWS/GCP/Azure
 
 ### Human Resource Management (HRM) System
 
-**Frontend**: Vue.js
-**Backend**: ASP.NET Co
+- **Frontend**: Vue.js
+- **Backend**: ASP.NET Co
