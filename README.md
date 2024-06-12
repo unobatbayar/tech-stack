@@ -74,10 +74,10 @@ This repository contains a curated list of technology stacks suitable for differ
 ---
 
 #### The MEAN stack
-- **[MongoDB](https://www.mongodb.com/)**
-- **[Express.js](https://expressjs.com/)**
-- **[AngularJS](https://angularjs.org/)** 
-- **[Node.js](https://nodejs.org/en/)**
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
+- [AngularJS](https://angularjs.org/)
+- [Node.js](https://nodejs.org/en/)
   - [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4)
 
 #### The [MERN](https://www.mongodb.com/mern-stack) stack
@@ -125,7 +125,10 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Spring](https://spring.io/guides/tutorials/rest/)
 
 #### Database
-- **[SQLite](https://www.sqlite.org/index.html)
+- [SQLite](https://www.sqlite.org/index.html)
+- MySQL
+- MongoDB
+- Amazon DynamoDB
 
 #### Realtime
 - [Firebase](https://firebase.google.com/products/realtime-database)
