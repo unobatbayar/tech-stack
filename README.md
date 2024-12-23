@@ -80,7 +80,7 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Node.js](https://nodejs.org/en/)
   - [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4)
 
-#### The [MERN](https://www.mongodb.com/mern-stack) stack
+#### The [MERN](https://www.mongodb.com/mern-stack) stack 
 - [MongoDB](https://www.mongodb.com/)
 - [Express.js](https://expressjs.com/)
 - [React](https://reactjs.org/)
@@ -119,7 +119,8 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Xcode](https://developer.apple.com/xcode/)
 - [Android Studio](https://developer.android.com/studio)
 
-#### API
+#### Rest API
+- [http](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [Node.js](https://nodejs.org/en/)
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 - [Spring](https://spring.io/guides/tutorials/rest/)
