@@ -146,5 +146,7 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Spatial Computing (SwiftUI / RealityKit)](https://developer.apple.com/wwdc23/topics/spatial-computing/)
 - [Unity](https://learn.unity.com/course/create-with-vr)
 
+#### Hardware Layer
+- [Raspberry Pi](https://www.raspberrypi.com/documentation/)
 ---
 
