@@ -2,7 +2,7 @@
 
 This repository contains a curated list of technology stacks suitable for different types of software projects. Whether you're building a web application, mobile app, or enterprise software, choosing the right technology stack is crucial for the success of your project.
 
-### Currently using/learning 
+### Learning right now (Web App project)
 
 - [Next.js](https://nextjs.org/)  
   A React-based framework for building server-side rendered (SSR) and static web applications.
