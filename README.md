@@ -2,6 +2,47 @@
 
 This repository contains a curated list of technology stacks suitable for different types of software projects. Whether you're building a web application, mobile app, or enterprise software, choosing the right technology stack is crucial for the success of your project.
 
+### Currently using/learning 
+
+- [Next.js](https://nextjs.org/)  
+  A React-based framework for building server-side rendered (SSR) and static web applications.
+
+- [Apollo Client](https://www.apollographql.com/docs/react/)  
+  A package for interacting with GraphQL APIs on the frontend, managing data caching and state.
+
+- [Tailwind CSS](https://tailwindcss.com/)  
+  A utility-first CSS framework that allows for efficient, intuitive, and flexible design implementation.
+
+- [NestJS](https://nestjs.com/)  
+  An efficient and maintainable backend framework for building scalable server-side applications.
+
+- [GraphQL API](https://graphql.org/)  
+  A query language for APIs that allows flexible data retrieval and manipulation through a single endpoint.
+
+- [REST API](https://restfulapi.net/)  
+  A standard API design that uses HTTP methods for operations and specific URIs for different resources.
+
+- [Prisma](https://www.prisma.io/)  
+  A tool that simplifies database access and management, with full TypeScript support.
+
+- [PostgreSQL](https://www.postgresql.org/)  
+  A relational database used for storing data in the Accordo system.
+
+- [MinIO](https://min.io/)  
+  A software that provides AWS S3-compatible object storage solutions.
+
+- [SQL Server](https://www.microsoft.com/en-us/sql-server)  
+  A relational database used for managing work metrics and related information.
+
+- [Microsoft GraphAPI](https://learn.microsoft.com/en-us/graph/)  
+  API for accessing Microsoft 365 data, such as users, groups, and calendars.
+
+- [Docker](https://www.docker.com/)  
+  A platform for containerizing applications to simplify environment setup and execution.
+
+- [Typescript](https://www.typescriptlang.org/)  
+  A strongly typed superset of JavaScript, providing enhanced developer tools and safety.
+
 #### The MEAN stack
 - [MongoDB](https://www.mongodb.com/)
 - [Express.js](https://expressjs.com/)
