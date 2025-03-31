@@ -8,6 +8,7 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Django](https://www.djangoproject.com/)
 - [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Backend For Frondend(BFF)](https://www.openlegacy.com/blog/backend-for-frontend)
 
 ### Past Web App project stack
 
