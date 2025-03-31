@@ -7,6 +7,8 @@ This repository contains a curated list of technology stacks suitable for differ
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 - [Django](https://www.djangoproject.com/)
 - [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
+  Object–relational mapping in computer science is a programming technique for converting data between a relational database and the memory of an object-oriented programming language. This creates, in effect, a virtual object database that can be used from within the programming language.
+
 - [PostgreSQL](https://www.postgresql.org/)
 - [Backend For Frondend(BFF)](https://www.openlegacy.com/blog/backend-for-frontend)
 
