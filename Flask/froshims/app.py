@@ -1,6 +1,9 @@
+from cs50 import SQL
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
+
+db = SQL("sqlite:///froshims.db")
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=True)
@@ -8,11 +11,10 @@ if __name__ == "__main__":
 
 sports = [ "Basketball", "Soccer", "Ultimate Frisbee"]
 
-REGISTRANTS = {}
 
 @app.route("/")
 def index():
-    return render_template("index.html", sports=sports, registrants=REGISTRANTS)
+    return render_template("index.html", sports=sports)
 
 
 @app.route("/register", methods=["POST"])
@@ -25,13 +27,14 @@ def register():
     if sport not in sports:
         return render_template("error.html", error_message="No sport found")
 
-    REGISTRANTS[name] = sport
+    db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
 
     return render_template("success.html")
 
 @app.route("/registrants")
 def registrants():
-    return render_template("registrants.html", registrants=REGISTRANTS)
+    registrants = db.execute("SELECT name, sport FROM registrants")
+    return render_template("registrants.html", registrants=registrants)
 
 # Define a route
 @app.route('/weather')
