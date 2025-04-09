@@ -15,7 +15,6 @@ class UserOut(BaseModel):
     id: int
     name: str
     email: str
-    createdAt: str
 
 # Connect to the Prisma client
 @app.on_event("startup")

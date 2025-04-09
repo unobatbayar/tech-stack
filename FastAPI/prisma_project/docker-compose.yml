@@ -1,3 +1,4 @@
+# docker-compose.yml
 version: '3.8'
 services:
   postgres:
@@ -8,3 +9,12 @@ services:
       POSTGRES_DB: mydb
     ports:
       - "5432:5432"
+
+  fastapi:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/mydb
