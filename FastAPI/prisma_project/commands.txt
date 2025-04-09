@@ -1,0 +1,6 @@
+﻿virtualenv env
+source venv/bin/activate
+pip install fastapi prisma uvicorn
+npm install -g prisma
+prisma init
+docker-compose up -d
