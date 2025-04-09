@@ -1,4 +1,5 @@
-﻿from fastapi import FastAPI, HTTPException
+﻿from contextlib import asynccontextmanager
+from fastapi import FastAPI, HTTPException
 from prisma import Prisma
 from pydantic import BaseModel
 from typing import List
@@ -16,19 +17,18 @@ class UserOut(BaseModel):
     name: str
     email: str
 
-# Connect to the Prisma client
-@app.on_event("startup")
-async def startup():
-    print("starting up...")
+# Create the lifespan context manager for Prisma client
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Connect to Prisma during startup
     await prisma.connect()
-    print("prisma connected.")
-    
-
-@app.on_event("shutdown")
-async def shutdown():
-    print("shutting down")
+    print("Prisma connected.")
+    yield
+    # Disconnect Prisma during shutdown
     await prisma.disconnect()
-    print("prisma disconnected.")
+    print("Prisma disconnected.")
+
+app = FastAPI(lifespan=lifespan)
 
 # Create a new user
 @app.post("/users/", response_model=UserOut)
