@@ -1,3 +1,3 @@
-﻿virtualenv
-fastapi
-prisma
+﻿fastapi[all]
+prisma[client]
+uvicorn

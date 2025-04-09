@@ -3,4 +3,10 @@ source venv/bin/activate
 pip install fastapi prisma uvicorn
 npm install -g prisma
 prisma init
+
 docker-compose up -d
+
+uvicorn main:app --reload
+fastapi dev main.py    
+
+prisma migrate dev --name init
