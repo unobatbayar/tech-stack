@@ -1,3 +1,0 @@
-[submodule "welcome-to-docker"]
-	path = welcome-to-docker
-	url = https://github.com/docker/welcome-to-docker
