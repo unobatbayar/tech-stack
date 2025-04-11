@@ -1,3 +1,2 @@
 ﻿flask_sqlalchemy
 flask
-sqlite3

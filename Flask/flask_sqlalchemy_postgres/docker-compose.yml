@@ -1,0 +1,27 @@
+﻿version: "3.8"
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: flask_user
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: flask_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: development
+      DATABASE_URL: postgresql://flask_user:password123@db:5432/flask_db
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
