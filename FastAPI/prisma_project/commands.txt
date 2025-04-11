@@ -1,7 +1,6 @@
 ﻿virtualenv env
 source venv/bin/activate
-pip install fastapi prisma uvicorn
-npm install prisma
+
 prisma init
 prisma generate
 prisma migrate deploy
@@ -14,3 +13,15 @@ fastapi dev main.py
 
 prisma migrate dev --name init
 
+---
+Docker container
+
+source venv/bin/activate
+pip install -r requirements.txt
+
+pip install fastapi prisma uvicorn
+npm install prisma
+
+pip freeze > requirements.txt
+
+deactivate
