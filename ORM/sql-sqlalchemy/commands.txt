@@ -1,0 +1,4 @@
+﻿virtualenv env
+source venv/bin/activate
+touch models.py
+alembic init migrations
