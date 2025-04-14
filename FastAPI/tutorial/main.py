@@ -1,0 +1,30 @@
+﻿from fastapi import FastAPI, Depends, HTTPException
+from sqlalchemy.orm import Session
+from database import engine, Base, get_db
+import models
+
+# Create the database tables (you can remove this once you're using Alembic migrations)
+# Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+@app.post("/items/")
+def create_item(name: str, description: str, db: Session = Depends(get_db)):
+    db_item = models.Item(name=name, description=description)
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, db: Session = Depends(get_db)):
+    db_item = db.query(models.Item).filter(models.Item.id == item_id).first()
+    if db_item is None:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return db_item
+
+@app.get("/items/")
+def get_all_items(db: Session = Depends(get_db)):
+    # Query all items from the database
+    items = db.query(models.Item).all()
+    return items
