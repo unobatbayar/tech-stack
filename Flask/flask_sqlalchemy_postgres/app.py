@@ -27,7 +27,7 @@ def create_item():
 def get_items():
     items = Item.query.all()
     return jsonify([
-        {"id": item.id, "name": item.name, "description": item.description}
+        {"id": item.id, "name": item.name, "description": item.description, "created_at": item.created_at}
         for item in items
     ])
 
