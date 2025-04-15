@@ -8,13 +8,6 @@ import models
 
 app = FastAPI()
 
-@app.get("/items/")
-def get_all_items(db: Session = Depends(get_db)):
-    # Query all items from the database
-    items = db.query(models.Item).all()
-    return items
-
-
 @app.post("/items/")
 def create_item(
     name: str = Form(...),
@@ -33,4 +26,27 @@ def read_item(item_id: int, db: Session = Depends(get_db)):
     if db_item is None:
         raise HTTPException(status_code=404, detail="Item not found")
     return db_item
+
+@app.get("/items/")
+def get_all_items(db: Session = Depends(get_db)):
+    # Query all items from the database
+    items = db.query(models.Item).all()
+    return items
+
+@app.delete("/items/{item_id}")
+def delete_item(
+    item_id: int, 
+    db:Session = Depends(get_db)):
+    # Deleting a user
+    db_item = db.query(models.Item).filter(models.Item.id == item_id).first()
+    if db_item:
+        db.delete(db_item)
+        db.commit()
+        return {"detail": "Item deleted successfully"}
+    else:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+
+
+
 
