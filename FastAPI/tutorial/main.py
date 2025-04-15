@@ -1,4 +1,4 @@
-﻿from fastapi import FastAPI, Depends, HTTPException
+﻿from fastapi import FastAPI, Depends, Form, HTTPException
 from sqlalchemy.orm import Session
 from database import engine, Base, get_db
 import models
@@ -16,7 +16,11 @@ def get_all_items(db: Session = Depends(get_db)):
 
 
 @app.post("/items/")
-def create_item(name: str, description: str, db: Session = Depends(get_db)):
+def create_item(
+    name: str = Form(...),
+    description: str = Form(...),
+    db: Session = Depends(get_db)
+):
     db_item = models.Item(name=name, description=description)
     db.add(db_item)
     db.commit()
