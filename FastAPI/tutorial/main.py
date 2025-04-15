@@ -8,6 +8,13 @@ import models
 
 app = FastAPI()
 
+@app.get("/items/")
+def get_all_items(db: Session = Depends(get_db)):
+    # Query all items from the database
+    items = db.query(models.Item).all()
+    return items
+
+
 @app.post("/items/")
 def create_item(name: str, description: str, db: Session = Depends(get_db)):
     db_item = models.Item(name=name, description=description)
@@ -23,8 +30,3 @@ def read_item(item_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Item not found")
     return db_item
 
-@app.get("/items/")
-def get_all_items(db: Session = Depends(get_db)):
-    # Query all items from the database
-    items = db.query(models.Item).all()
-    return items
