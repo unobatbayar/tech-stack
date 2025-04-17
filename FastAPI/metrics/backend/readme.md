@@ -1,4 +1,12 @@
-﻿#### Activate virtual environment
+﻿#### Requirements
+
+fastapi
+uvicorn
+sqlalchemy
+alembic
+psycopg2-binary
+
+#### Activate virtual environment
 
 source venv/bin/activate
 
@@ -21,7 +29,3 @@ uvicorn main:app --reload
   If something goes wrong or you want to undo:
 
 `alembic downgrade -1`
-
-#### To do
-
-pip freeze > requirements.txt
