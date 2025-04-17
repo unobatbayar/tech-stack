@@ -1,4 +1,4 @@
-﻿alembic
-sqlalchemy
-fastapi
+﻿fastapi
 uvicorn
+sqlalchemy
+alembic
