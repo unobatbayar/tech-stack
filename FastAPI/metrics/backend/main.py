@@ -1,6 +1,6 @@
 ﻿from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
-from models import Role  # Import your models
+from models import Role  # Import models
 from database import get_db
 
 app = FastAPI()
