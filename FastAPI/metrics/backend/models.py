@@ -1,5 +1,5 @@
 ﻿from datetime import datetime
-from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String
+from sqlalchemy import Boolean, Column, Date, DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base() 
@@ -26,7 +26,7 @@ class Role(Base):
     users = relationship("User", back_populates="role")
 
 class User(Base):
-    __table__ = "users"
+    __tablename__ = "users"
 
     uid = Column(String, primary_key=True, index=True)
     name = Column(String, nullable=False)
@@ -39,7 +39,7 @@ class User(Base):
 #### product_categories, products
 
 class ProductCategory(Base):
-    __table__ = "product_categories"
+    __tablename__ = "product_categories"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
@@ -48,7 +48,7 @@ class ProductCategory(Base):
     products = relationship("Product", back_populates="category")
 
 class Product(Base):
-    __table__ = "products"
+    __tablename__ = "products"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
@@ -61,7 +61,7 @@ class Product(Base):
 #### functions, function_activities
 
 class Function(Base):
-    __table__ = "functions"
+    __tablename__ = "functions"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
@@ -71,6 +71,8 @@ class Function(Base):
     activities = relationship("FunctionActivity", back_populates="function")
 
 class FunctionActivity(Base):
+    __tablename__ = "function_activities"
+
     id = Column(Integer, primary_key=True, index=True)
     function_id = Column(Integer, ForeignKey("functions.id"))
     name = Column(String, nullable=False)
@@ -79,3 +81,35 @@ class FunctionActivity(Base):
 
     # Relationship to Function
     function = relationship("Function", back_populates="activities")
+
+#### current_product_works, product_worktimes
+
+class CurrentProductWork(Base):
+    __tablename__ = "current_product_works"
+
+    id = Column(Integer, primary_key=True, index=True)
+    week = Column(Date, nullable=False)
+    product_category_id = Column(Integer, ForeignKey("product_categories.id"), nullable=False)
+    product_id = Column(Integer, ForeignKey("products.id"), nullable=False)
+    function_id = Column(Integer, ForeignKey("functions.id"), nullable=False)
+    function_activity_id = Column(Integer, ForeignKey("function_activities.id"), nullable=False)
+    user_id = Column(String, ForeignKey("users.uid"), nullable=False)
+    index = Column(Integer, nullable=False)
+
+    # Relationships (if needed later for queries)
+    product_category = relationship("ProductCategory", back_populates="current_works")
+    product = relationship("Product", back_populates="current_works")
+    function = relationship("Function", back_populates="current_works")
+    function_activity = relationship("FunctionActivity", back_populates="current_works")
+    user = relationship("User", back_populates="current_works")
+
+class ProductWorktime(Base):
+    __tablename__ = "product_worktimes"
+
+    id = Column(Integer, primary_key=True, index=True)
+    current_product_work_id = Column(Integer, ForeignKey("current_product_works.id"), nullable=False)
+    datetime = Column(DateTime, nullable=False)
+    worktime = Column(Float, nullable=False)
+
+    # Relationship (optional, for easier querying if needed)
+    current_product_work = relationship("CurrentProductWork", back_populates="worktimes")
