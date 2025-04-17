@@ -1,17 +1,8 @@
 ﻿from datetime import datetime
-from sqlalchemy import Boolean, Column, Date, DateTime, Float, ForeignKey, Integer, String
+from sqlalchemy import Boolean, Column, Date, DateTime, Float, ForeignKey, Integer, String, Time
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base() 
-
-class UserModel(Base):
-    __tablename__ = "user"
-
-    id = Column(Integer, primary_key=True)
-    first_name = Column(String, nullable=False)
-    last_name = Column(String, nullable=False)
-    birth = Column(DateTime)
-    created = Column(DateTime, default=datetime.now)
 
 #### roles, users
 
@@ -22,7 +13,6 @@ class Role(Base):
     name = Column(String, nullable=False)
 
     # This creates a "back-reference" so you can access Role.users
-    # Lets you do role.users to get a list of all users with that role.
     users = relationship("User", back_populates="role")
 
 class User(Base):
@@ -33,7 +23,6 @@ class User(Base):
     role_id = Column(Integer, ForeignKey("roles.id"))
 
     # This connects the user to the role
-    # Lets you do user.role to get the Role object for a given user.
     role = relationship("Role", back_populates="users")
 
 #### product_categories, products
@@ -44,7 +33,7 @@ class ProductCategory(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
-    # Relationship with Product
+
     products = relationship("Product", back_populates="category")
 
 class Product(Base):
@@ -55,7 +44,6 @@ class Product(Base):
     product_category_id = Column(Integer, ForeignKey("product_categories.id"))
     is_active = Column(Boolean, default=True)
 
-    # Relationship to ProductCategory
     category = relationship("ProductCategory", back_populates="products")
 
 #### functions, function_activities
@@ -67,7 +55,6 @@ class Function(Base):
     name = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
 
-    # Relationship to FunctionActivity
     activities = relationship("FunctionActivity", back_populates="function")
 
 class FunctionActivity(Base):
@@ -79,7 +66,6 @@ class FunctionActivity(Base):
     index = Column(Integer, nullable=False)
     is_active = Column(Boolean, default=True)
 
-    # Relationship to Function
     function = relationship("Function", back_populates="activities")
 
 #### current_product_works, product_worktimes
@@ -96,7 +82,6 @@ class CurrentProductWork(Base):
     user_id = Column(String, ForeignKey("users.uid"), nullable=False)
     index = Column(Integer, nullable=False)
 
-    # Relationships (if needed later for queries)
     product_category = relationship("ProductCategory", back_populates="current_works")
     product = relationship("Product", back_populates="current_works")
     function = relationship("Function", back_populates="current_works")
@@ -111,5 +96,67 @@ class ProductWorktime(Base):
     datetime = Column(DateTime, nullable=False)
     worktime = Column(Float, nullable=False)
 
-    # Relationship (optional, for easier querying if needed)
     current_product_work = relationship("CurrentProductWork", back_populates="worktimes")
+
+#### technology_categories, technology_activities, technologies
+
+class TechnologyCategory(Base):
+    __tablename__ = "technology_categories"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    is_active = Column(Boolean, default=True)
+
+    activities = relationship("TechnologyActivity", back_populates="category")
+    technologies = relationship("Technology", back_populates="category")
+
+
+class TechnologyActivity(Base):
+    __tablename__ = "technology_activities"
+
+    id = Column(Integer, primary_key=True, index=True)
+    technology_category_id = Column(Integer, ForeignKey("technology_categories.id"), nullable=False)
+    name = Column(String, nullable=False)
+    index = Column(Integer, nullable=False)
+    is_active = Column(Boolean, default=True)
+
+    category = relationship("TechnologyCategory", back_populates="activities")
+
+class Technology(Base):
+    __tablename__ = "technologies"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    technology_category_id = Column(Integer, ForeignKey("technology_categories.id"), nullable=False)
+    is_active = Column(Boolean, default=True)
+
+    category = relationship("TechnologyCategory", back_populates="technologies")
+
+#### current_tech_works, technology_worktimes
+
+class CurrentTechWork(Base):
+    __tablename__ = "current_tech_works"
+
+    id = Column(Integer, primary_key=True, index=True)
+    week = Column(Date, nullable=False)
+    technology_category_id = Column(Integer, ForeignKey("technology_categories.id"), nullable=False)
+    technology_id = Column(Integer, ForeignKey("technologies.id"), nullable=False)
+    technology_activity_id = Column(Integer, ForeignKey("technology_activities.id"), nullable=False)
+    user_id = Column(String, ForeignKey("users.uid"), nullable=False)
+    work_ratio = Column(Integer, nullable=False)
+    index = Column(Integer, nullable=False)
+
+    technology_category = relationship("TechnologyCategory", back_populates="current_tech_works")
+    technology = relationship("Technology", back_populates="current_tech_works")
+    technology_activity = relationship("TechnologyActivity", back_populates="current_tech_works")
+    user = relationship("User", back_populates="current_tech_works")
+
+class TechnologyWorktime(Base):
+    __tablename__ = "technology_worktimes"
+
+    id = Column(Integer, primary_key=True, index=True)
+    current_tech_work_id = Column(Integer, ForeignKey("current_tech_works.id"), nullable=False)
+    datetime = Column(DateTime, nullable=False)
+    worktime = Column(Float, nullable=False)  # Worktime in hours
+
+    current_tech_work = relationship("CurrentTechWork", back_populates="worktimes")
