@@ -21,3 +21,7 @@ uvicorn main:app --reload
   If something goes wrong or you want to undo:
 
 `alembic downgrade -1`
+
+#### To do
+
+pip freeze > requirements.txt

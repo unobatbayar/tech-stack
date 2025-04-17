@@ -1,2 +1,4 @@
 ﻿alembic
 sqlalchemy
+fastapi
+uvicorn
