@@ -1,13 +1,19 @@
 ﻿from sqlalchemy import Boolean, Column, Date, DateTime, Float, ForeignKey, Integer, String
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base, relationship
 
-Base = declarative_base() 
+Base = declarative_base()
+
+
+# === Roles & Users ===
 
 class Role(Base):
     __tablename__ = "roles"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
+
+    users = relationship("User", back_populates="role")
+
 
 class User(Base):
     __tablename__ = "users"
@@ -16,12 +22,23 @@ class User(Base):
     name = Column(String, nullable=False)
     role_id = Column(Integer, ForeignKey("roles.id"))
 
+    role = relationship("Role", back_populates="users")
+    current_product_works = relationship("CurrentProductWork", back_populates="user")
+    current_tech_works = relationship("CurrentTechWork", back_populates="user")
+
+
+# === Product Categories & Products ===
+
 class ProductCategory(Base):
     __tablename__ = "product_categories"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
+
+    products = relationship("Product", back_populates="category")
+    current_product_works = relationship("CurrentProductWork", back_populates="product_category")
+
 
 class Product(Base):
     __tablename__ = "products"
@@ -31,12 +48,22 @@ class Product(Base):
     product_category_id = Column(Integer, ForeignKey("product_categories.id"))
     is_active = Column(Boolean, default=True)
 
+    category = relationship("ProductCategory", back_populates="products")
+    current_product_works = relationship("CurrentProductWork", back_populates="product")
+
+
+# === Functions & Activities ===
+
 class Function(Base):
     __tablename__ = "functions"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
+
+    activities = relationship("FunctionActivity", back_populates="function")
+    current_product_works = relationship("CurrentProductWork", back_populates="function")
+
 
 class FunctionActivity(Base):
     __tablename__ = "function_activities"
@@ -46,6 +73,12 @@ class FunctionActivity(Base):
     name = Column(String, nullable=False)
     index = Column(Integer, nullable=False)
     is_active = Column(Boolean, default=True)
+
+    function = relationship("Function", back_populates="activities")
+    current_product_works = relationship("CurrentProductWork", back_populates="function_activity")
+
+
+# === Current Product Work & Worktimes ===
 
 class CurrentProductWork(Base):
     __tablename__ = "current_product_works"
@@ -59,6 +92,14 @@ class CurrentProductWork(Base):
     user_id = Column(String, ForeignKey("users.uid"), nullable=False)
     index = Column(Integer, nullable=False)
 
+    product_category = relationship("ProductCategory", back_populates="current_product_works")
+    product = relationship("Product", back_populates="current_product_works")
+    function = relationship("Function", back_populates="current_product_works")
+    function_activity = relationship("FunctionActivity", back_populates="current_product_works")
+    user = relationship("User", back_populates="current_product_works")
+    worktimes = relationship("ProductWorktime", back_populates="current_product_work")
+
+
 class ProductWorktime(Base):
     __tablename__ = "product_worktimes"
 
@@ -67,12 +108,22 @@ class ProductWorktime(Base):
     datetime = Column(DateTime, nullable=False)
     worktime = Column(Float, nullable=False)
 
+    current_product_work = relationship("CurrentProductWork", back_populates="worktimes")
+
+
+# === Technology Categories, Activities, Technologies ===
+
 class TechnologyCategory(Base):
     __tablename__ = "technology_categories"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
+
+    activities = relationship("TechnologyActivity", back_populates="category")
+    technologies = relationship("Technology", back_populates="category")
+    current_tech_works = relationship("CurrentTechWork", back_populates="technology_category")
+
 
 class TechnologyActivity(Base):
     __tablename__ = "technology_activities"
@@ -83,6 +134,10 @@ class TechnologyActivity(Base):
     index = Column(Integer, nullable=False)
     is_active = Column(Boolean, default=True)
 
+    category = relationship("TechnologyCategory", back_populates="activities")
+    current_tech_works = relationship("CurrentTechWork", back_populates="technology_activity")
+
+
 class Technology(Base):
     __tablename__ = "technologies"
 
@@ -90,6 +145,12 @@ class Technology(Base):
     name = Column(String, nullable=False)
     technology_category_id = Column(Integer, ForeignKey("technology_categories.id"), nullable=False)
     is_active = Column(Boolean, default=True)
+
+    category = relationship("TechnologyCategory", back_populates="technologies")
+    current_tech_works = relationship("CurrentTechWork", back_populates="technology")
+
+
+# === Current Tech Work & Worktimes ===
 
 class CurrentTechWork(Base):
     __tablename__ = "current_tech_works"
@@ -103,10 +164,19 @@ class CurrentTechWork(Base):
     work_ratio = Column(Integer, nullable=False)
     index = Column(Integer, nullable=False)
 
+    technology_category = relationship("TechnologyCategory", back_populates="current_tech_works")
+    technology = relationship("Technology", back_populates="current_tech_works")
+    technology_activity = relationship("TechnologyActivity", back_populates="current_tech_works")
+    user = relationship("User", back_populates="current_tech_works")
+    worktimes = relationship("TechnologyWorktime", back_populates="current_tech_work")
+
+
 class TechnologyWorktime(Base):
     __tablename__ = "technology_worktimes"
 
     id = Column(Integer, primary_key=True, index=True)
     current_tech_work_id = Column(Integer, ForeignKey("current_tech_works.id"), nullable=False)
     datetime = Column(DateTime, nullable=False)
-    worktime = Column(Float, nullable=False)  # Worktime in hours
+    worktime = Column(Float, nullable=False)
+
+    current_tech_work = relationship("CurrentTechWork", back_populates="worktimes")
