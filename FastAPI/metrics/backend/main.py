@@ -1,6 +1,7 @@
 ﻿# main.py
 # FastAPI app
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
 from database import get_db
 from models import Role, User, FunctionActivity, TechnologyActivity
@@ -13,6 +14,18 @@ from typing import List
 
 
 app = FastAPI()
+
+
+@app.get("/", response_class=HTMLResponse)
+def index():
+    return HTMLResponse("""
+        <h2>🚀 Worktime Metrics Micro Service Index</h2>
+        <ul>
+            <li><a href="/docs">Swagger UI</a></li>
+            <li><a href="/redoc">ReDoc</a></li>
+            <li><a href="/openapi.json">OpenAPI Spec</a></li>
+        </ul>
+    """)
 
 # === Roles ===
 
