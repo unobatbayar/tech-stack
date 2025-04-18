@@ -1,4 +1,5 @@
 ﻿# models.py
+# For Alembic database migration and SQLAlchemy query
 from sqlalchemy import Boolean, Column, Date, DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.orm import declarative_base, relationship
 

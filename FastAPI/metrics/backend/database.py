@@ -1,4 +1,5 @@
 ﻿# database.py
+# To connect FastAPI app with the database
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
