@@ -19,7 +19,7 @@ app = FastAPI()
 @app.get("/", response_class=HTMLResponse)
 def index():
     return HTMLResponse("""
-        <h2>🚀 Worktime Metrics Micro Service Index</h2>
+        <h2>🚀 Worktime Metrics Micro Service</h2>
         <ul>
             <li><a href="/docs">Swagger UI</a></li>
             <li><a href="/redoc">ReDoc</a></li>
