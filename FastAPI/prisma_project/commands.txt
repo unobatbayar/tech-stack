@@ -1,0 +1,27 @@
+﻿virtualenv env
+source venv/bin/activate
+
+prisma init
+prisma generate
+prisma migrate deploy
+prisma db push
+
+docker-compose up -d
+
+uvicorn main:app --reload
+fastapi dev main.py    
+
+prisma migrate dev --name init
+
+---
+Docker container
+
+source venv/bin/activate
+pip install -r requirements.txt
+
+pip install fastapi prisma uvicorn
+npm install prisma
+
+pip freeze > requirements.txt
+
+deactivate

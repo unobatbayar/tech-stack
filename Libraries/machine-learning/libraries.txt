@@ -1,0 +1,16 @@
+﻿Scikit-learn
+TensorFlow
+Keras
+PyTorch
+XGBoost
+LightGBM
+CatBoost
+H2O.ai
+Theano
+MXNet
+Caffe
+Fast.ai
+StatsModels
+TensorFlow Lite
+Google Cloud AI Platform
+MLlib (Apache Spark's machine learning library)

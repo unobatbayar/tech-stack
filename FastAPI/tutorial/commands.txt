@@ -1,0 +1,6 @@
+﻿virtualenv venv
+source venv/bin/activate
+
+pip install fastapi[all] sqlalchemy psycopg2
+
+uvicorn main:app --reload
