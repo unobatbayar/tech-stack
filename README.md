@@ -2,6 +2,10 @@
 
 This repository contains a curated list of technology stacks suitable for different types of software projects. Whether you're building a web application, mobile app, or enterprise software, choosing the right technology stack is crucial for the success of your project.
 
+### New
+
+- [T3Stack](https://create.t3.gg/)
+
 ### Current project stack
 
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
