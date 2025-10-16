@@ -9,7 +9,7 @@ This repository contains a curated list of technology stacks suitable for differ
 ### Image Storage
 - [Cloudinary](https://cloudinary.com/pricing)
 - [Amazon S3](https://aws.amazon.com/s3/)
-- 
+
 ### Current project stack
 
 - [Next.js](https://nextjs.org/)  
