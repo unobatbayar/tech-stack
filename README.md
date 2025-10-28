@@ -5,6 +5,17 @@ This repository contains a curated list of technology stacks suitable for differ
 ### New
 
 - [T3Stack](https://create.t3.gg/)
+  - [NextAuth.js](https://next-auth-example.vercel.app/)
+| Goal               | Tool/Technique              |
+| ------------------ | --------------------------- |
+| Authentication     | NextAuth.js / Clerk         |
+| Authorization      | `protectedProcedure`, RBAC  |
+| Input validation   | Zod schemas                 |
+| Rate limiting      | Upstash / Middleware        |
+| Secrets management | `.env` + server-only access |
+| Prevent spam/abuse | Rate limiting, reCAPTCHA    |
+| External access    | Secure CORS setup           |
+
 
 ### Image Storage
 - [Cloudinary](https://cloudinary.com/pricing)
