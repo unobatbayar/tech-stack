@@ -6,6 +6,8 @@ This repository contains a curated list of technology stacks suitable for differ
 
 - [T3Stack](https://create.t3.gg/)
   - [NextAuth.js](https://next-auth-example.vercel.app/)
+ 
+  
 | Goal               | Tool/Technique              |
 | ------------------ | --------------------------- |
 | Authentication     | NextAuth.js / Clerk         |
