@@ -506,7 +506,3 @@ This is a learning repository. Feel free to:
 ## 📄 License
 
 This repository is for educational purposes. Check individual project folders for specific licenses.
-
----
-
-**Happy Learning! 🎉**
